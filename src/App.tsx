@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import ListItens from './components/ListItens';
 import GlobalStyle from './styles';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <GlobalStyle />
       <Header />
+      <ListItens />
     </>
   );
 }

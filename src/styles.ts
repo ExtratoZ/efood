@@ -1,9 +1,9 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const colors = {
   salmon: '#E66767',
   background: '#FFF8F2',
-  Footer: '#FFEBD9',
+  lightSalmon: '#FFEBD9',
   white: '#FFFFFF'
 }
 
@@ -25,6 +25,20 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     margin: 0 auto;
   }
+
+  a {
+    color: ${colors.lightSalmon};
+  }
 `;
+
+export const Button = styled.button`
+  background-color: ${colors.salmon};
+  padding: 4px 6px;
+  color: ${colors.lightSalmon};
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  margin-right: 8px;
+`
 
 export default GlobalStyle;
