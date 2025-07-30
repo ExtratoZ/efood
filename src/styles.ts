@@ -40,5 +40,11 @@ export const Button = styled.button`
   border: none;
   margin-right: 8px;
 `
+export const Section = styled.div`
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+`
 
 export default GlobalStyle;

@@ -1,14 +1,15 @@
-import Header from './components/Header';
-import ListItens from './components/ListItens';
+import { BrowserRouter } from 'react-router-dom';
+import Footer from './components/Footer';
+import Rotas from './routes';
 import GlobalStyle from './styles';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <GlobalStyle />
-      <Header />
-      <ListItens />
-    </>
+      <Rotas />
+      <Footer />
+    </BrowserRouter>
   );
 }
 

@@ -6,18 +6,9 @@ export const Background = styled.div`
   background-image: url(${background});
   height: 384px;
 `;
-
-export const Section = styled.div`
-  display: inline-block;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-`
-
 export const Logo = styled.img`
   margin-top: 40px;
 `;
-
 export const Description = styled.h1`
   color: ${colors.salmon};
   font-weight: 900;

@@ -14,6 +14,7 @@ export const Item = styled.li`
   border: 1px solid ${colors.salmon};
   position: relative;
   width: 427px;
+  height: 398px;
 `
 export const ItemText = styled.div`
   color: ${colors.salmon};
