@@ -4,12 +4,15 @@ import twitter from '../../assets/images/twitter.svg'
 import facebook from '../../assets/images/facebook.svg'
 import { Section } from '../../styles';
 import * as S from './styles'
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
   <S.Background>
     <div className="container">
       <Section>
-        <S.Logo src={logo} alt="logo efood" />
+        <Link to={'/'}>
+          <S.Logo src={logo} alt="Logo Efood" />
+        </Link>
         <S.Social>
           <li>
             <img src={instagram} alt="instagram" />
@@ -17,9 +20,9 @@ const Footer = () => (
           <S.SocialItem>
             <img src={facebook} alt="facebook" />
           </S.SocialItem>
-          <S.SocialLastItem>
+          <li>
             <img src={twitter} alt="twitter" />
-          </S.SocialLastItem>
+          </li>
         </S.Social>
         <S.Description>
           A efood é uma plataforma para divulgação de estabelecimentos, a

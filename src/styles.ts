@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const colors = {
@@ -29,9 +30,22 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: ${colors.lightSalmon};
   }
+
+  ul {
+    padding: 0;
+  }
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
+  background-color: ${colors.salmon};
+  padding: 4px 6px;
+  color: ${colors.lightSalmon};
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  margin-right: 8px;
+`
+export const Tag = styled.div`
   background-color: ${colors.salmon};
   padding: 4px 6px;
   color: ${colors.lightSalmon};

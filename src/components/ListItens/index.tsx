@@ -1,5 +1,5 @@
 import * as S from './styles';
-import { Button } from '../../styles';
+import { Button, Tag } from '../../styles';
 import haiko from '../../assets/images/haiko.svg';
 import trattoria from '../../assets/images/trattoria.svg';
 import star from '../../assets/images/estrela.svg';
@@ -10,8 +10,8 @@ const ListItens = () => (
       <S.Item>
         <S.Image src={haiko} alt="haiko sushi" />
         <S.Tags>
-          <Button>Destaque da Semana</Button>
-          <Button>Japonesa</Button>
+          <Tag>Destaque da Semana</Tag>
+          <Tag>Japonesa</Tag>
         </S.Tags>
         <S.ItemText>
           <S.TitleSection>
@@ -26,15 +26,13 @@ const ListItens = () => (
             Entrega rápida, embalagens cuidadosas. Experimente o Japão sem sair
             do lar com nosso delivery!
           </S.Description>
-          <Button>
-            <a href="#">Saiba mais</a>
-          </Button>
+          <Button to={'/perfil'}>Saiba mais</Button>
         </S.ItemText>
       </S.Item>
       <S.Item>
         <S.Image src={trattoria} alt="La dolce vita trattoria" />
         <S.Tags>
-          <Button>Italiana</Button>
+          <Tag>Italiana</Tag>
         </S.Tags>
         <S.ItemText>
           <S.TitleSection>
@@ -49,16 +47,14 @@ const ListItens = () => (
             incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem
             embalados e sabor inesquecível. Peça já!
           </S.Description>
-          <Button>
-            <a href="#">Saiba mais</a>
-          </Button>
+          <Button to={'/perfil'}>Saiba mais</Button>
         </S.ItemText>
       </S.Item>
       <S.Item>
         <S.Image src={haiko} alt="haiko sushi" />
         <S.Tags>
-          <Button>Destaque da Semana</Button>
-          <Button>Japonesa</Button>
+          <Tag>Destaque da Semana</Tag>
+          <Tag>Japonesa</Tag>
         </S.Tags>
         <S.ItemText>
           <S.TitleSection>
@@ -73,15 +69,13 @@ const ListItens = () => (
             Entrega rápida, embalagens cuidadosas. Experimente o Japão sem sair
             do lar com nosso delivery!
           </S.Description>
-          <Button>
-            <a href="#">Saiba mais</a>
-          </Button>
+          <Button to={'/perfil'}>Saiba mais</Button>
         </S.ItemText>
       </S.Item>
       <S.Item>
         <S.Image src={trattoria} alt="La dolce vita trattoria" />
         <S.Tags>
-          <Button>Italiana</Button>
+          <Tag>Italiana</Tag>
         </S.Tags>
         <S.ItemText>
           <S.TitleSection>
@@ -96,16 +90,14 @@ const ListItens = () => (
             incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem
             embalados e sabor inesquecível. Peça já!
           </S.Description>
-          <Button>
-            <a href="#">Saiba mais</a>
-          </Button>
+          <Button to={'/perfil'}>Saiba mais</Button>
         </S.ItemText>
       </S.Item>
       <S.Item>
         <S.Image src={haiko} alt="haiko sushi" />
         <S.Tags>
-          <Button>Destaque da Semana</Button>
-          <Button>Japonesa</Button>
+          <Tag>Destaque da Semana</Tag>
+          <Tag>Japonesa</Tag>
         </S.Tags>
         <S.ItemText>
           <S.TitleSection>
@@ -120,15 +112,13 @@ const ListItens = () => (
             Entrega rápida, embalagens cuidadosas. Experimente o Japão sem sair
             do lar com nosso delivery!
           </S.Description>
-          <Button>
-            <a href="#">Saiba mais</a>
-          </Button>
+          <Button to={'/perfil'}>Saiba mais</Button>
         </S.ItemText>
       </S.Item>
       <S.Item>
         <S.Image src={trattoria} alt="La dolce vita trattoria" />
         <S.Tags>
-          <Button>Italiana</Button>
+          <Tag>Italiana</Tag>
         </S.Tags>
         <S.ItemText>
           <S.TitleSection>
@@ -143,9 +133,7 @@ const ListItens = () => (
             incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem
             embalados e sabor inesquecível. Peça já!
           </S.Description>
-          <Button>
-            <a href="#">Saiba mais</a>
-          </Button>
+          <Button to={'/perfil'}>Saiba mais</Button>
         </S.ItemText>
       </S.Item>
     </S.ListSection>

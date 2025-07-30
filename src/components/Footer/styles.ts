@@ -15,9 +15,6 @@ export const Logo = styled.img`
 export const SocialItem = styled.li`
   margin: 0 8px;
 `
-export const SocialLastItem = styled.li`
-  margin-right: 36px;
-`
 export const Description = styled.p`
   display: inline-flex;
   justify-content: center;

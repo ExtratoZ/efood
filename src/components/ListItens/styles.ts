@@ -13,12 +13,12 @@ export const Item = styled.li`
   background: ${colors.white};
   border: 1px solid ${colors.salmon};
   position: relative;
-  width: 427px;
+  width: 472px;
   height: 398px;
 `
 export const ItemText = styled.div`
   color: ${colors.salmon};
-  padding: 8px;
+  padding: 4px;
 `
 export const Description = styled.p`
   font-size: 14px;
@@ -42,10 +42,11 @@ export const Rating = styled.span`
   align-items: center;
 `
 export const Tags = styled.div`
+  display: flex;
   position: absolute;
   top: 16px;
   right: 16px;
 `
 export const Image = styled.img`
-  max-width: 425px;
+  max-width: 470px;
 `
