@@ -3,7 +3,7 @@ import * as S from './styles';
 import type { Restaurant } from '../../pages/Home';
 import Restaurants from '../Restaurant';
 
-export type Props = {
+type Props = {
   restaurant: Restaurant[];
 };
 

@@ -21,12 +21,12 @@ const Restaurants = ({
   review,
   description,
 }: Props) => {
-   const getDescription = (description: string) => {
+  const getDescription = (description: string) => {
     if (description.length > 210) {
-      return description.slice(0, 210) + '...'
+      return description.slice(0, 210) + '...';
     }
-    return description
-  }
+    return description;
+  };
 
   return (
     <S.Item>
@@ -43,7 +43,7 @@ const Restaurants = ({
           </S.Rating>
         </S.TitleSection>
         <S.Description>{getDescription(description)}</S.Description>
-        <Button to={`/perfil/${id}`}>Saiba mais</Button>
+        <Button to={`/restaurants/${id}`}>Saiba mais</Button>
       </S.ItemText>
     </S.Item>
   );

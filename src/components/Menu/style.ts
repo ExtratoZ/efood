@@ -5,7 +5,7 @@ export const background = styled.div`
   background: ${colors.background};
   padding: 64px 0;
 `
-export const HistorySection = styled.ul`
+export const MenuSection = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 32px; 
@@ -13,6 +13,7 @@ export const HistorySection = styled.ul`
 export const Product = styled.li`
   background: ${colors.salmon};
   padding: 8px;
+  max-height: 338px;
   color: ${colors.lightSalmon};
 `
 export const Title = styled.h3`
@@ -34,4 +35,10 @@ export const Button = styled.a`
   color: ${colors.salmon};
   background: ${colors.lightSalmon};
   padding: 4px 0;
+`
+export const Image = styled.img`
+  max-width: 304px;
+  width: 100%;
+  height: 166px;
+  object-fit: cover;
 `
