@@ -1,19 +1,23 @@
 import { useEffect, useState } from 'react';
-import Banner from '../../components/Banner/indes';
+import Banner from '../../components/Banner';
 import HeaderPerfil from '../../components/HeaderPerfil';
 import Menu from '../../components/Menu';
 import type { Restaurant } from '../Home';
 import { useParams } from 'react-router-dom';
-import { Product, Title, Text, Button, Image } from '../../components/Menu/style';
+import {
+  Product,
+  Title,
+  Text,
+  Button,
+  Image,
+} from '../../components/Menu/style';
 
 const Restaurants = () => {
   const { id } = useParams();
   const [restaurant, setRestaurant] = useState<Restaurant>();
 
   useEffect(() => {
-    fetch(
-      `https://ebac-fake-api.vercel.app/api/efood/restaurantes/${id}`,
-    )
+    fetch(`https://ebac-fake-api.vercel.app/api/efood/restaurantes/${id}`)
       .then((res) => res.json())
       .then((res) => setRestaurant(res))
       .catch((error) => console.error(error));
@@ -31,18 +35,18 @@ const Restaurants = () => {
   return (
     <>
       <HeaderPerfil />
-      <Banner />
+      <Banner banner={restaurant}/>
       <Menu>
         <>
           {Array.isArray(restaurant.cardapio) &&
             restaurant.cardapio.map((prato) => (
-            <Product key={prato.id}>
-              <Image src={prato.foto} alt={prato.nome} />
-              <Title>{prato.nome}</Title>
-              <Text>{getDescription(prato.descricao)}</Text>
-              <Button>Mais detalhes</Button>
-            </Product>
-          ))}
+              <Product key={prato.id}>
+                <Image src={prato.foto} alt={prato.nome} />
+                <Title>{prato.nome}</Title>
+                <Text>{getDescription(prato.descricao)}</Text>
+                <Button>Mais detalhes</Button>
+              </Product>
+            ))}
         </>
       </Menu>
     </>
