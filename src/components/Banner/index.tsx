@@ -7,11 +7,7 @@ type Props = {
 
 const Banner = ({ banner }: Props) => {
   return (
-    <S.Background
-      style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${banner.capa})`,
-      }}
-    >
+    <S.Background Image={banner.capa}>
       <div className="container">
         <S.Subtitle>{banner.tipo}</S.Subtitle>
         <S.Title>{banner.titulo}</S.Title>

@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 import { colors } from '../../styles';
 
-export const Background = styled.div`
+interface Props {
+  Image: string;
+}
+
+export const Background = styled.div<Props>`
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${(props) => props.Image});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
