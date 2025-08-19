@@ -35,6 +35,7 @@ export const Button = styled.a`
   color: ${colors.salmon};
   background: ${colors.lightSalmon};
   padding: 4px 0;
+  cursor: pointer;
 `
 export const Image = styled.img`
   max-width: 304px;

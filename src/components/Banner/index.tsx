@@ -7,7 +7,7 @@ type Props = {
 
 const Banner = ({ banner }: Props) => {
   return (
-    <S.Background Image={banner.capa}>
+    <S.Background picture={banner.capa}>
       <div className="container">
         <S.Subtitle>{banner.tipo}</S.Subtitle>
         <S.Title>{banner.titulo}</S.Title>
